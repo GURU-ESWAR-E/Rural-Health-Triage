@@ -1,0 +1,36 @@
+{
+    "en": {
+      "title": "Rural Health Triage",
+      "subtitle": "Tap a body part to begin assessment",
+      "region_select": "Select a Region",
+      "instruction": "Please tap on the interactive body to log patient symptoms.",
+      "reported": "Reported Symptoms:",
+      "no_symptoms": "No symptoms recorded yet",
+      "other_symptoms": "Other Symptoms (Dictate or Type):",
+      "voice_placeholder": "Start speaking or type symptoms...",
+      "village_label": "Patient Location / Village:",
+      "analyze_btn": "Analyze Severity",
+      "feedback_title": "Report Facility Issues",
+      "dashboard_link": "View Government Dashboard →",
+      "feedback_desc": "Submit complaints regarding hospital infrastructure or medical supplies directly to the health department.",
+      "complaint_placeholder": "Describe the issue at your local facility... (e.g. Broken beds, missing medicine)",
+      "submit_feedback": "Submit Report to Government"
+    },
+    "te": {
+      "title": "గ్రామీణ ఆరోగ్య చికిత్స",
+      "subtitle": "అంచనా కోసం ఒక శరీర భాగాన్ని నొక్కండి",
+      "region_select": "ప్రాంతాన్ని ఎంచుకోండి",
+      "instruction": "లక్షణాలను నమోదు చేయడానికి ఇంటరాక్టివ్ శరీరంపై నొక్కండి.",
+      "reported": "నమోదు చేసిన లక్షణాలు:",
+      "no_symptoms": "ఇంకా ఎలాంటి లక్షణాలు నమోదు కాలేదు",
+      "other_symptoms": "ఇతర లక్షణాలు:",
+      "voice_placeholder": "మాట్లాడటం ప్రారంభించండి లేదా టైప్ చేయండి...",
+      "village_label": "రోగి స్థానం / గ్రామం:",
+      "analyze_btn": "తీవ్రతను విశ్లేషించండి",
+      "feedback_title": "సౌకర్యాల సమస్యలను నివేదించండి",
+      "dashboard_link": "ప్రభుత్వ డ్యాష్‌బోర్డ్ చూడండి →",
+      "feedback_desc": "స్థానిక ఆసుపత్రిలోని మౌలిక సదుపాయాల సమస్యలను నేరుగా ఆరోగ్య శాఖకు ఫిర్యాదు చేయండి.",
+      "complaint_placeholder": "మీ సదుపాయంలో సమస్యను వివరించండి...",
+      "submit_feedback": "ప్రభుత్వానికి నివేదించండి"
+    }
+  }

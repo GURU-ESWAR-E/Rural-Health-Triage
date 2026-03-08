@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Government Dashboard - Rural Health</title>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <style>
+        body { font-family: 'Segoe UI', system-ui, -apple-system, sans-serif; background: #f8fbff; color: #023e8a; padding: 2rem; margin: 0; }
+        .container { max-width: 1000px; margin: 0 auto; background: white; padding: 2.5rem; border-radius: 16px; box-shadow: 0 4px 15px rgba(0,0,0,0.05); }
+        h1 { text-align: center; color: #0077b6; margin-top: 0; margin-bottom: 2rem; }
+        .chart-wrapper { position: relative; height: 50vh; width: 100%; }
+        .nav-link { display: inline-block; margin-bottom: 1rem; color: #0077b6; text-decoration: none; font-weight: bold; }
+        .nav-link:hover { text-decoration: underline; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <a href="/" class="nav-link">&larr; Back to Triage Tool</a>
+        <h1>RED Triage Events per Village</h1>
+        <div class="chart-wrapper">
+            <canvas id="redEventsChart"></canvas>
+        </div>
+    </div>
+
+    <script>
+        const ctx = document.getElementById('redEventsChart').getContext('2d');
+        const villages = {{ villages | tojson }};
+        const counts = {{ counts | tojson }};
+        
+        new Chart(ctx, {
+            type: 'bar',
+            data: {
+                labels: villages,
+                datasets: [{
+                    label: 'Emergency (RED) Cases',
+                    data: counts,
+                    backgroundColor: 'rgba(230, 57, 70, 0.7)',
+                    borderColor: 'rgba(230, 57, 70, 1)',
+                    borderWidth: 2,
+                    borderRadius: 4
+                }]
+            },
+            options: {
+                responsive: true,
+                maintainAspectRatio: false,
+                scales: {
+                    y: {
+                        beginAtZero: true,
+                        ticks: { stepSize: 1 }
+                    }
+                },
+                plugins: {
+                    legend: {
+                        labels: {
+                            font: { size: 14 }
+                        }
+                    }
+                }
+            }
+        });
+    </script>
+</body>
+</html>
